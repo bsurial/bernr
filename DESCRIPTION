@@ -15,3 +15,5 @@ Imports:
     dplyr,
     ggplot2,
     stringr
+URL: http://github.com/bsurial/bernr
+BugReports: http://github.com/bsurial/bernr/issues
