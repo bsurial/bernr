@@ -7,7 +7,7 @@
 #'
 #' @param df Dataframe.
 #' @param col Column to summarise.
-#' @param probs Probabilities for IQR, default are 0.25 to 0.75.
+#' @param na.rm Removes NAs before calculation, default is TRUE.
 #'
 #' @return Summarized dataframe.
 #' @export

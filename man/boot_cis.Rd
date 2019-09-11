@@ -2,16 +2,21 @@
 % Please edit documentation in R/boot_cis.R
 \name{boot_cis}
 \alias{boot_cis}
-\title{Extract 95% CIs from bootMer objects}
+\title{Confidence intervals of bootMer objects}
 \usage{
 boot_cis(boot)
 }
 \arguments{
-\item{boot}{Boot created with the bootMer command in the lme4 package.}
+\item{boot}{bootMer object from which to retreive confidence interval}
 }
 \value{
-Dataframe with upper and lower confidence intervals.
+A dataframe with confidence intervals
 }
 \description{
-Extract 95% CIs from bootMer objects
+Confidence intervals of bootMer objects
+}
+\examples{
+\dontrun{
+boot_cis(bootMer.object)
+}
 }

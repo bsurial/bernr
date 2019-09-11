@@ -4,16 +4,25 @@ Title: Package for my personal functions
 Version: 0.1.0
 Author: Bernard Surial
 Maintainer: Bernard Surial <surial.bernard@gmail.com>
-Description: Functions I use among multiple projects
-License: No license
+Description: This is a package to collect my functions I use.
+License: GPL-2 | GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 Suggests: 
+    haven,
+    nlme, 
+    sjlabelled,
     testthat
 Imports: 
     dplyr,
     ggplot2,
+    here,
+    knitr, 
+    magrittr,
+    purrr,
+    readr,
+    rlang,
     stringr
 URL: http://github.com/bsurial/bernr
 BugReports: http://github.com/bsurial/bernr/issues

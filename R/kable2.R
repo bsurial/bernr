@@ -12,5 +12,5 @@
 #' kable2(mtcars)
 #'
 kable2 <- function(df, digits = 2) {
-  knitr::kable(mutate_if(df, is.numeric, round, digits))
+  knitr::kable(dplyr::mutate_if(df, is.numeric, round, digits))
 }

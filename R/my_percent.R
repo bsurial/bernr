@@ -10,6 +10,7 @@
 #' @export
 #'
 #' @examples
+#' library(dplyr)
 #' mtcars %>%
 #'   count(cyl) %>%
 #'   mutate(p = my_percent(n))

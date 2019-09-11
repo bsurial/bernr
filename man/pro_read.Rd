@@ -14,5 +14,7 @@ Reads rds files directly from the processed folder, which should be in
   the project's root folder.
 }
 \examples{
-pro_read("dataframe.rds")
+\dontrun{
+pro_read("file.rds")
+}
 }

@@ -11,7 +11,7 @@ my_summary(df, col, na.rm = TRUE)
 
 \item{col}{Column to summarise.}
 
-\item{probs}{Probabilities for IQR, default are 0.25 to 0.75.}
+\item{na.rm}{Removes NAs before calculation, default is TRUE.}
 }
 \value{
 Summarized dataframe.

@@ -22,6 +22,8 @@ rds_saver(df, name, prefix = "00", postfix = "",
 This is a convenience wrapper to write files into folders and append a prefix.
 }
 \examples{
+\dontrun{
 rds_saver(mtcars, name = "mtcars", folder = "processed")
+}
 
 }

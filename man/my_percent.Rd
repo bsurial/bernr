@@ -19,6 +19,7 @@ After counting or summarising in dplyr, generates percentages instead of
 probabilites. It is a wrapper around round(n/sum(n)*100).
 }
 \examples{
+library(dplyr)
 mtcars \%>\%
   count(cyl) \%>\%
   mutate(p = my_percent(n))

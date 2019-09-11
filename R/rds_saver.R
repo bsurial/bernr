@@ -11,7 +11,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' rds_saver(mtcars, name = "mtcars", folder = "processed")
+#' }
 #'
 rds_saver <- function(df, name, prefix = "00", postfix = "", folder = "processed") {
   readr::write_rds(df,

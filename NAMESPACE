@@ -1,2 +1,4 @@
 exportPattern("^[[:alpha:]]+")
 importFrom(magrittr,"%>%")
+importFrom("stats", "formula", "median", "model.matrix", "predict",
+           "qnorm", "quantile", "setNames", "vcov")

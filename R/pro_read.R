@@ -4,8 +4,10 @@
 #'   the project's root folder.
 #'
 #' @param file Name of the file.
-#' @examples
-#' pro_read("dataframe.rds")
+#'@examples
+#'\dontrun{
+#'pro_read("file.rds")
+#'}
 
 # Read from processed folder
 pro_read <- function(file) {
