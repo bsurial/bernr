@@ -10,6 +10,7 @@
 #' @param ucl Upper confidence value.
 #' @param digits Round to digits.
 #' @param to Separator used in the brackets.
+#' @param unit Unit of estimator to include, default is "".
 #'
 #' @return
 #' @export
@@ -24,12 +25,15 @@
 #'             ucl = mean + 1.96 * se) %>%
 #'             print_confint("mean_ci", estimate = mean, lcl = lcl,
 #'                           ucl = ucl, digits = 2, to = " to ")
-print_confint <- function(df, new_col, estimate, lcl, ucl, digits = 1, to = " - ") {
+print_confint <- function(df, new_col, estimate, lcl, ucl, digits = 1, to = " - ", unit = "") {
+  if (stringr::str_detect(unit, "[:alnum:]")) {
+    unit <- paste0(" ", unit)
+  }
   estimate <- dplyr::enquo(estimate)
   lcl <- dplyr::enquo(lcl)
   ucl <- dplyr::enquo(ucl)
   df %>%
-    dplyr::mutate(!!new_col := paste0(round(!!estimate, digits), " (95% CI ",
+    dplyr::mutate(!!new_col := paste0(round(!!estimate, digits), unit," (95% CI ",
                                       round(!!lcl, digits), to,
                                       round(!!ucl, digits), ")"))
 }
