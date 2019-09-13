@@ -28,11 +28,11 @@ with their corresponding confidence intervals, e.g. 1.2 (95% CI 1.1 - 1.3).
 \examples{
 library(dplyr)
 mtcars \%>\%
-summarise(mean = mean(mpg),
-          n = n(),
-          se = sd(mpg)/sqrt(n),
-          lcl = mean - 1.96 * se,
-          ucl = mean + 1.96 * se) \%>\%
-          print_confint("mean_ci", estimate = mean, lcl = lcl,
-                      ucl = ucl, digits = 2, to = " to ")
+  summarise(mean = mean(mpg),
+            n = n(),
+            se = sd(mpg)/sqrt(n),
+            lcl = mean - 1.96 * se,
+            ucl = mean + 1.96 * se) \%>\%
+            print_confint("mean_ci", estimate = mean, lcl = lcl,
+                          ucl = ucl, digits = 2, to = " to ")
 }
