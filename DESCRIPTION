@@ -23,6 +23,7 @@ Imports:
     purrr,
     readr,
     rlang,
-    stringr
+    stringr, 
+    tableone
 URL: http://github.com/bsurial/bernr
 BugReports: http://github.com/bsurial/bernr/issues
