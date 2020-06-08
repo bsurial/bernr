@@ -15,10 +15,8 @@
 
 
 distinct_ids <- function(df, id = id) {
-  id <- dplyr::enquo(id)
   df %>%
-    dplyr::summarise(distinct_ids = n_distinct(!!id)) %>%
+    dplyr::summarise(distinct_ids = dplyr::across({{ id }}, dplyr::n_distinct)) %>%
     dplyr::pull(distinct_ids)
 }
-
 
