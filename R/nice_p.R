@@ -10,8 +10,8 @@
 #'
 #' @examples
 #' set.seed(1)
-#' x <- rnorm(100)
-#' y <- rnorm(100)
+#' x <- rnorm(100, mean = 0)
+#' y <- rnorm(100, mean = 10)
 #'
 #' t <- t.test(x, y)
 #' nice_p(t$p.value)
