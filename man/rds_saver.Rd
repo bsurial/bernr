@@ -4,8 +4,7 @@
 \alias{rds_saver}
 \title{Save rds files into folder}
 \usage{
-rds_saver(df, name, prefix = "00", postfix = "",
-  folder = "processed")
+rds_saver(df, name, prefix = "00", postfix = "", folder = "processed")
 }
 \arguments{
 \item{df}{Dataframe to save.}

@@ -4,8 +4,16 @@
 \alias{print_confint}
 \title{Creates nice confidence report for tables}
 \usage{
-print_confint(df, new_col, estimate, lcl, ucl, digits = 1, to = " - ",
-  unit = "")
+print_confint(
+  df,
+  new_col,
+  estimate,
+  lcl,
+  ucl,
+  digits = 1,
+  to = " - ",
+  unit = ""
+)
 }
 \arguments{
 \item{df}{Dataframe.}
@@ -23,6 +31,9 @@ print_confint(df, new_col, estimate, lcl, ucl, digits = 1, to = " - ",
 \item{to}{Separator used in the brackets.}
 
 \item{unit}{Unit of estimator to include, default is "".}
+}
+\value{
+
 }
 \description{
 Creates a nice and convenient output for tables and graphs to report estimates
