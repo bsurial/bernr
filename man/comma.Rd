@@ -23,7 +23,7 @@ This function is useful if used in Rmarkdown documents or when used to print nic
 
 x <- 200.00
 comma(x, digits = 1)
-# "200.0"
-comma(x, digits = 1, trailing = FALSE)
 # "200"
+comma(x, digits = 1, trailing = TRUE)
+# "200.0"
 }

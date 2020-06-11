@@ -13,9 +13,9 @@
 #'
 #' x <- 200.00
 #' comma(x, digits = 1)
-#' # "200.0"
-#' comma(x, digits = 1, trailing = FALSE)
 #' # "200"
+#' comma(x, digits = 1, trailing = TRUE)
+#' # "200.0"
 
 comma <- function(x, digits = 1, trailing = FALSE) {
   if(trailing == TRUE) {
