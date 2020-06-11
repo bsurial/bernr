@@ -4,7 +4,7 @@
 \alias{n_pct}
 \title{Prints number of observations and its percantage in brackets}
 \usage{
-n_pct(x, total, digits = 1, brackets = TRUE, trailing = TRUE)
+n_pct(x, total, digits = 1, brackets = TRUE, ...)
 }
 \arguments{
 \item{x}{Numerator}
@@ -15,7 +15,7 @@ n_pct(x, total, digits = 1, brackets = TRUE, trailing = TRUE)
 
 \item{brackets}{Whether percentages should be displayed in bracktes, alternative is seperation with ","}
 
-\item{trailing}{Whether trailing zeroes should be displayed}
+\item{...}{additional arguments passed to bernr::comma()}
 }
 \value{
 

@@ -5,8 +5,8 @@
 #' @param x Numerator
 #' @param total Denominator
 #' @param digits Digits to display after decimal point
+#' @param ... additional arguments passed to bernr::comma()
 #' @param brackets Whether percentages should be displayed in bracktes, alternative is seperation with ","
-#' @param trailing Whether trailing zeroes should be displayed
 #'
 #' @return
 #' @export
@@ -22,11 +22,11 @@
 #' # 10, 1%
 #'
 
-n_pct <- function(x, total, digits = 1, brackets = TRUE, trailing = TRUE) {
+n_pct <- function(x, total, digits = 1, brackets = TRUE, ...) {
   if(brackets == TRUE) {
-    glue::glue("{bernr::comma(x, trailing = trailing)} ({bernr::comma(x/total * 100, digits = digits, trailing = trailing)}%)")
+    glue::glue("{bernr::comma(x, ...)} ({bernr::comma(x/total * 100, ...)}%)")
   } else if(brackets == FALSE) {
-    glue::glue("{bernr::comma(x, trailing = trailing)}, {bernr::comma(round(x/total * 100), digits = digits, trailing = trailing)}%")
+    glue::glue("{bernr::comma(x, ...)}, {bernr::comma(round(x/total * 100), ...)}%")
   }
 }
 
