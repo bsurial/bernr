@@ -24,6 +24,7 @@ Imports:
     readr,
     rlang,
     stringr, 
-    tableone
+    tableone,
+    glue
 URL: http://github.com/bsurial/bernr
 BugReports: http://github.com/bsurial/bernr/issues
