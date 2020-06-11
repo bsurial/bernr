@@ -26,7 +26,7 @@ n_pct <- function(x, total, digits = 1, brackets = TRUE, ...) {
   if(brackets == TRUE) {
     glue::glue("{bernr::comma(x, trailing = FALSE)} ({bernr::comma(x/total * 100, ...)}%)")
   } else if(brackets == FALSE) {
-    glue::glue("{bernr::comma(x, trailing = FALSE)}, {bernr::comma(round(x/total * 100), ...)}%")
+    glue::glue("{bernr::comma(x, trailing = FALSE)}, {bernr::comma(x/total * 100, ...)}%")
   }
 }
 
