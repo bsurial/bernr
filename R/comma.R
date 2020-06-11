@@ -4,7 +4,7 @@
 #'
 #' @param x A numeric object to modify
 #' @param digits Desired number of digits after the decimal point
-#' @param trailing Should trailing zeroes be preserved? Default = TRUE
+#' @param trailing Should trailing zeroes be preserved? Default = FALSE
 #'
 #' @return A properly formatted character object
 #' @export
@@ -17,7 +17,7 @@
 #' comma(x, digits = 1, trailing = FALSE)
 #' # "200"
 
-comma <- function(x, digits = 1, trailing = TRUE) {
+comma <- function(x, digits = 1, trailing = FALSE) {
   if(trailing == TRUE) {
   formatC(round(x, digits = digits), format = "f",
           digits = digits, big.mark = "'")
