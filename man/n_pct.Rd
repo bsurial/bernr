@@ -7,11 +7,11 @@
 n_pct(x, total, digits = 1, brackets = TRUE, ...)
 }
 \arguments{
-\item{x}{Numerator}
+\item{x}{Numerator, will also be displayed as n (never prints with trailing zeros.)}
 
 \item{total}{Denominator}
 
-\item{digits}{Digits to display after decimal point}
+\item{digits}{Digits to display after decimal point for percentage only}
 
 \item{brackets}{Whether percentages should be displayed in bracktes, alternative is seperation with ","}
 

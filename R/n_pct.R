@@ -2,9 +2,9 @@
 #'
 #' This function is especially useful when used in Rmarkdown documents or tables.
 #'
-#' @param x Numerator
+#' @param x Numerator, will also be displayed as n (never prints with trailing zeros.)
 #' @param total Denominator
-#' @param digits Digits to display after decimal point
+#' @param digits Digits to display after decimal point for percentage only
 #' @param ... additional arguments passed to bernr::comma()
 #' @param brackets Whether percentages should be displayed in bracktes, alternative is seperation with ","
 #'
@@ -24,9 +24,9 @@
 
 n_pct <- function(x, total, digits = 1, brackets = TRUE, ...) {
   if(brackets == TRUE) {
-    glue::glue("{bernr::comma(x, ...)} ({bernr::comma(x/total * 100, ...)}%)")
+    glue::glue("{bernr::comma(x, trailing = FALSE)} ({bernr::comma(x/total * 100, ...)}%)")
   } else if(brackets == FALSE) {
-    glue::glue("{bernr::comma(x, ...)}, {bernr::comma(round(x/total * 100), ...)}%")
+    glue::glue("{bernr::comma(x, trailing = FALSE)}, {bernr::comma(round(x/total * 100), ...)}%")
   }
 }
 
