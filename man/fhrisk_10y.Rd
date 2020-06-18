@@ -36,10 +36,12 @@ fhrisk_10y(
 character oject indicating 10% cardiovascular risk
 }
 \description{
-This functions calculates the 10-year cardiovascular risk based on the Framingham Risk Score. I used data from 
+This functions calculates the 10-year cardiovascular risk based on the Framingham Risk Score. I used data from
 \href{https://en.wikipedia.org/wiki/Framingham_Risk_Score}{Wikipedia}.
 }
 \examples{
-fhrisk_10y(gender = "male", age = 60, cholesterol = 7, hdl = 1.2, sysbp = 120, bp_treated = TRUE, mg_dl = FALSE)
+fhrisk_10y(gender = "male", age = 60, cholesterol = 7,
+           hdl = 1.2, sysbp = 120, bp_treated = TRUE,
+           mg_dl = FALSE)
 
 }

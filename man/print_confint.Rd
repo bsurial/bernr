@@ -33,7 +33,7 @@ print_confint(
 \item{unit}{Unit of estimator to include, default is "".}
 }
 \value{
-
+Character object
 }
 \description{
 Creates a nice and convenient output for tables and graphs to report estimates

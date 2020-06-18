@@ -18,7 +18,7 @@ n_pct(x, total, digits = 1, brackets = TRUE, ...)
 \item{...}{additional arguments passed to bernr::comma()}
 }
 \value{
-
+Character object
 }
 \description{
 This function is especially useful when used in Rmarkdown documents or tables.
