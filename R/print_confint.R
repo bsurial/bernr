@@ -12,7 +12,7 @@
 #' @param to Separator used in the brackets.
 #' @param unit Unit of estimator to include, default is "".
 #'
-#' @return
+#' @return Character object
 #' @export
 #'
 #' @examples

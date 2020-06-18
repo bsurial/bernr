@@ -8,7 +8,7 @@
 #' @param ... additional arguments passed to bernr::comma()
 #' @param brackets Whether percentages should be displayed in bracktes, alternative is seperation with ","
 #'
-#' @return
+#' @return Character object
 #' @export
 #'
 #' @examples
