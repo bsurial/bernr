@@ -28,3 +28,5 @@ Imports:
     glue
 URL: http://github.com/bsurial/bernr
 BugReports: http://github.com/bsurial/bernr/issues
+Depends: 
+    R (>= 2.10)
